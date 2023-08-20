@@ -44,15 +44,8 @@ public class Deck {
 	 */
 	public Deck(int iNbrOfDecks) {
 
-		short iCardNbr = 0;
-		for (int a = 0; a < iNbrOfDecks; a++) {
-			for (eSuit eSuit : EnumSet.range(eSuit.HEARTS, eSuit.DIAMONDS)) {
-				for (eRank eRank : EnumSet.range(eRank.TWO,  eRank.ACE)) {
-					cardsInDeck.add(new Card(eSuit, eRank, ++iCardNbr));
-				}
-			}
-		}
-		Collections.shuffle(cardsInDeck);
+		//TODO: Build the deck.  A deck of cards consists of 52 cards, all four suit and 13 rank cards.
+		//TODO: After you build the deck, shuffle the deck.
 	}
 	
 	/**
